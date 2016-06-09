@@ -275,7 +275,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="309" height="272"/>
+        <image name="first" width="617" height="544"/>
         <image name="logo4" width="240" height="240"/>
     </resources>
 </document>
