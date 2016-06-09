@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C26CDF071D0888010033036B /* iphonesixplusblank.png in Resources */ = {isa = PBXBuildFile; fileRef = C26CDF061D0888010033036B /* iphonesixplusblank.png */; };
+		C26CDF121D08880D0033036B /* anythingelse.png in Resources */ = {isa = PBXBuildFile; fileRef = C26CDF081D08880D0033036B /* anythingelse.png */; };
+		C26CDF131D08880D0033036B /* cabs.png in Resources */ = {isa = PBXBuildFile; fileRef = C26CDF091D08880D0033036B /* cabs.png */; };
+		C26CDF141D08880D0033036B /* cakeflowers.png in Resources */ = {isa = PBXBuildFile; fileRef = C26CDF0A1D08880D0033036B /* cakeflowers.png */; };
+		C26CDF151D08880D0033036B /* food.png in Resources */ = {isa = PBXBuildFile; fileRef = C26CDF0B1D08880D0033036B /* food.png */; };
+		C26CDF161D08880D0033036B /* gift.png in Resources */ = {isa = PBXBuildFile; fileRef = C26CDF0C1D08880D0033036B /* gift.png */; };
+		C26CDF171D08880D0033036B /* homeservices.png in Resources */ = {isa = PBXBuildFile; fileRef = C26CDF0D1D08880D0033036B /* homeservices.png */; };
+		C26CDF181D08880D0033036B /* laundry.png in Resources */ = {isa = PBXBuildFile; fileRef = C26CDF0E1D08880D0033036B /* laundry.png */; };
+		C26CDF191D08880D0033036B /* movie.png in Resources */ = {isa = PBXBuildFile; fileRef = C26CDF0F1D08880D0033036B /* movie.png */; };
+		C26CDF1A1D08880D0033036B /* recharge.png in Resources */ = {isa = PBXBuildFile; fileRef = C26CDF101D08880D0033036B /* recharge.png */; };
+		C26CDF1B1D08880D0033036B /* runner.png in Resources */ = {isa = PBXBuildFile; fileRef = C26CDF111D08880D0033036B /* runner.png */; };
 		FA3148631D045510005D13D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3148621D045510005D13D1 /* AppDelegate.swift */; };
 		FA3148681D045510005D13D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3148661D045510005D13D1 /* Main.storyboard */; };
 		FA31486B1D045511005D13D1 /* Alternative.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA3148691D045511005D13D1 /* Alternative.xcdatamodeld */; };
@@ -19,6 +30,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C26CDF061D0888010033036B /* iphonesixplusblank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphonesixplusblank.png; sourceTree = "<group>"; };
+		C26CDF081D08880D0033036B /* anythingelse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = anythingelse.png; sourceTree = "<group>"; };
+		C26CDF091D08880D0033036B /* cabs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cabs.png; sourceTree = "<group>"; };
+		C26CDF0A1D08880D0033036B /* cakeflowers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cakeflowers.png; sourceTree = "<group>"; };
+		C26CDF0B1D08880D0033036B /* food.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food.png; sourceTree = "<group>"; };
+		C26CDF0C1D08880D0033036B /* gift.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gift.png; sourceTree = "<group>"; };
+		C26CDF0D1D08880D0033036B /* homeservices.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homeservices.png; sourceTree = "<group>"; };
+		C26CDF0E1D08880D0033036B /* laundry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = laundry.png; sourceTree = "<group>"; };
+		C26CDF0F1D08880D0033036B /* movie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = movie.png; sourceTree = "<group>"; };
+		C26CDF101D08880D0033036B /* recharge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recharge.png; sourceTree = "<group>"; };
+		C26CDF111D08880D0033036B /* runner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = runner.png; sourceTree = "<group>"; };
 		FA31485F1D04550F005D13D1 /* Alternative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alternative.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3148621D045510005D13D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA3148671D045510005D13D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -43,9 +65,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C26CDF051D08879F0033036B /* Main Screen Images */ = {
+			isa = PBXGroup;
+			children = (
+				C26CDF081D08880D0033036B /* anythingelse.png */,
+				C26CDF091D08880D0033036B /* cabs.png */,
+				C26CDF0A1D08880D0033036B /* cakeflowers.png */,
+				C26CDF0B1D08880D0033036B /* food.png */,
+				C26CDF0C1D08880D0033036B /* gift.png */,
+				C26CDF0D1D08880D0033036B /* homeservices.png */,
+				C26CDF0E1D08880D0033036B /* laundry.png */,
+				C26CDF0F1D08880D0033036B /* movie.png */,
+				C26CDF101D08880D0033036B /* recharge.png */,
+				C26CDF111D08880D0033036B /* runner.png */,
+				C26CDF061D0888010033036B /* iphonesixplusblank.png */,
+			);
+			name = "Main Screen Images";
+			path = Alternative;
+			sourceTree = "<group>";
+		};
 		FA3148561D04550E005D13D1 = {
 			isa = PBXGroup;
 			children = (
+				C26CDF051D08879F0033036B /* Main Screen Images */,
 				FA3148611D045510005D13D1 /* Alternative */,
 				FA3148601D04550F005D13D1 /* Products */,
 			);
@@ -62,6 +104,7 @@
 		FA3148611D045510005D13D1 /* Alternative */ = {
 			isa = PBXGroup;
 			children = (
+				FA3148661D045510005D13D1 /* Main.storyboard */,
 				FA31487E1D04B5FE005D13D1 /* Model */,
 				FA31487D1D04B5E6005D13D1 /* Storyboard */,
 				FA3148811D04B659005D13D1 /* ViewController */,
@@ -92,7 +135,6 @@
 			isa = PBXGroup;
 			children = (
 				FA31486E1D045511005D13D1 /* LaunchScreen.storyboard */,
-				FA3148661D045510005D13D1 /* Main.storyboard */,
 			);
 			name = Storyboard;
 			sourceTree = "<group>";
@@ -191,9 +233,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C26CDF171D08880D0033036B /* homeservices.png in Resources */,
+				C26CDF141D08880D0033036B /* cakeflowers.png in Resources */,
+				C26CDF071D0888010033036B /* iphonesixplusblank.png in Resources */,
+				C26CDF181D08880D0033036B /* laundry.png in Resources */,
+				C26CDF1A1D08880D0033036B /* recharge.png in Resources */,
+				C26CDF161D08880D0033036B /* gift.png in Resources */,
 				FA3148701D045511005D13D1 /* LaunchScreen.storyboard in Resources */,
+				C26CDF151D08880D0033036B /* food.png in Resources */,
+				C26CDF131D08880D0033036B /* cabs.png in Resources */,
+				C26CDF191D08880D0033036B /* movie.png in Resources */,
 				FA31486D1D045511005D13D1 /* Assets.xcassets in Resources */,
 				FA3148681D045510005D13D1 /* Main.storyboard in Resources */,
+				C26CDF121D08880D0033036B /* anythingelse.png in Resources */,
+				C26CDF1B1D08880D0033036B /* runner.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +414,7 @@
 				FA3148761D045511005D13D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
