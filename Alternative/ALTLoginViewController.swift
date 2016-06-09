@@ -22,6 +22,12 @@ class ALTLoginViewController: UIViewController {
     }
     
 
+    @IBAction func loginPressed(sender: AnyObject) {
+        let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+        let initialViewController = storyboard.instantiateViewControllerWithIdentifier("MAINVIEW")
+        self.presentViewController(initialViewController, animated: true, completion: nil)
+        
+    }
     /*
     // MARK: - Navigation
 
