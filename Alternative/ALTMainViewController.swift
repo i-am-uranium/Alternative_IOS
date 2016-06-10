@@ -18,14 +18,9 @@ class ALTMainViewController: UIViewController {
         
         
         if revealViewController() != nil {
-            //            revealViewController().rearViewRevealWidth = 62
+            revealViewController().rearViewRevealWidth = 300
             menuItemButton.target = revealViewController()
-            menuItemButton.action = #selector(SWRevealViewController.revealToggle(_:))
-            
-//            revealViewController().rightViewRevealWidth = 150
-//            extraButton.target = revealViewController()
-//            extraButton.action = #selector(SWRevealViewController.rightRevealToggle(_:))
-            
+            menuItemButton.action = #selector(SWRevealViewController.revealToggle(_:))            
             view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
             
             
