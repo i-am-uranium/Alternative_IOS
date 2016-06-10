@@ -27,6 +27,10 @@
 		FA31487A1D046587005D13D1 /* ALTWalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3148791D046587005D13D1 /* ALTWalkthroughPageViewController.swift */; };
 		FA3148831D04B69D005D13D1 /* ALTLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3148821D04B69D005D13D1 /* ALTLoginViewController.swift */; };
 		FA3148851D04B6B4005D13D1 /* ALTRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3148841D04B6B4005D13D1 /* ALTRegisterViewController.swift */; };
+		FA4981861D09C7EF008CF01C /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4981851D09C7EF008CF01C /* SWRevealViewController.m */; };
+		FA4981881D09D4F5008CF01C /* ALTMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4981871D09D4F4008CF01C /* ALTMainViewController.swift */; };
+		FA49818A1D09DA85008CF01C /* ALTNavigationDrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4981891D09DA85008CF01C /* ALTNavigationDrawerViewController.swift */; };
+		FA49818C1D09DC56008CF01C /* ALTNavTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49818B1D09DC56008CF01C /* ALTNavTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +56,12 @@
 		FA3148791D046587005D13D1 /* ALTWalkthroughPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALTWalkthroughPageViewController.swift; sourceTree = "<group>"; };
 		FA3148821D04B69D005D13D1 /* ALTLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALTLoginViewController.swift; sourceTree = "<group>"; };
 		FA3148841D04B6B4005D13D1 /* ALTRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALTRegisterViewController.swift; sourceTree = "<group>"; };
+		FA4981831D09C7EE008CF01C /* Alternative-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Alternative-Bridging-Header.h"; sourceTree = "<group>"; };
+		FA4981841D09C7EF008CF01C /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		FA4981851D09C7EF008CF01C /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		FA4981871D09D4F4008CF01C /* ALTMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALTMainViewController.swift; sourceTree = "<group>"; };
+		FA4981891D09DA85008CF01C /* ALTNavigationDrawerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALTNavigationDrawerViewController.swift; sourceTree = "<group>"; };
+		FA49818B1D09DC56008CF01C /* ALTNavTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALTNavTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +91,12 @@
 				C26CDF061D0888010033036B /* iphonesixplusblank.png */,
 			);
 			name = "Main Screen Images";
-			path = Alternative;
 			sourceTree = "<group>";
 		};
 		FA3148561D04550E005D13D1 = {
 			isa = PBXGroup;
 			children = (
-				C26CDF051D08879F0033036B /* Main Screen Images */,
+				FA4981821D09C7E2008CF01C /* Libs */,
 				FA3148611D045510005D13D1 /* Alternative */,
 				FA3148601D04550F005D13D1 /* Products */,
 			);
@@ -104,7 +113,6 @@
 		FA3148611D045510005D13D1 /* Alternative */ = {
 			isa = PBXGroup;
 			children = (
-				FA3148661D045510005D13D1 /* Main.storyboard */,
 				FA31487E1D04B5FE005D13D1 /* Model */,
 				FA31487D1D04B5E6005D13D1 /* Storyboard */,
 				FA3148811D04B659005D13D1 /* ViewController */,
@@ -134,6 +142,7 @@
 		FA31487D1D04B5E6005D13D1 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				FA3148661D045510005D13D1 /* Main.storyboard */,
 				FA31486E1D045511005D13D1 /* LaunchScreen.storyboard */,
 			);
 			name = Storyboard;
@@ -157,6 +166,7 @@
 		FA3148801D04B64B005D13D1 /* supporting files */ = {
 			isa = PBXGroup;
 			children = (
+				C26CDF051D08879F0033036B /* Main Screen Images */,
 				FA3148711D045511005D13D1 /* Info.plist */,
 				FA31486C1D045511005D13D1 /* Assets.xcassets */,
 				FA3148691D045511005D13D1 /* Alternative.xcdatamodeld */,
@@ -170,8 +180,21 @@
 				FA31487C1D04B5D6005D13D1 /* Login-Register */,
 				FA31487B1D04B5C4005D13D1 /* WalkThrough */,
 				FA31487F1D04B615005D13D1 /* Appdelegate */,
+				FA4981871D09D4F4008CF01C /* ALTMainViewController.swift */,
+				FA4981891D09DA85008CF01C /* ALTNavigationDrawerViewController.swift */,
+				FA49818B1D09DC56008CF01C /* ALTNavTableViewCell.swift */,
 			);
 			name = ViewController;
+			sourceTree = "<group>";
+		};
+		FA4981821D09C7E2008CF01C /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				FA4981841D09C7EF008CF01C /* SWRevealViewController.h */,
+				FA4981851D09C7EF008CF01C /* SWRevealViewController.m */,
+				FA4981831D09C7EE008CF01C /* Alternative-Bridging-Header.h */,
+			);
+			name = Libs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +280,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA4981861D09C7EF008CF01C /* SWRevealViewController.m in Sources */,
 				FA31486B1D045511005D13D1 /* Alternative.xcdatamodeld in Sources */,
 				FA3148831D04B69D005D13D1 /* ALTLoginViewController.swift in Sources */,
+				FA49818C1D09DC56008CF01C /* ALTNavTableViewCell.swift in Sources */,
+				FA49818A1D09DA85008CF01C /* ALTNavigationDrawerViewController.swift in Sources */,
+				FA4981881D09D4F5008CF01C /* ALTMainViewController.swift in Sources */,
 				FA31487A1D046587005D13D1 /* ALTWalkthroughPageViewController.swift in Sources */,
 				FA3148851D04B6B4005D13D1 /* ALTRegisterViewController.swift in Sources */,
 				FA3148631D045510005D13D1 /* AppDelegate.swift in Sources */,
@@ -377,10 +404,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Alternative/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = in.alternativeforyou.Alternative;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Alternative-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -388,10 +418,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Alternative/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = in.alternativeforyou.Alternative;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Alternative-Bridging-Header.h";
 			};
 			name = Release;
 		};

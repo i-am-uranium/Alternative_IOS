@@ -341,6 +341,9 @@
         </scene>
     </scenes>
     <resources>
+<<<<<<< HEAD
+        <image name="first" width="617" height="544"/>
+=======
         <image name="anythingelse.png" width="144" height="144"/>
         <image name="cabs.png" width="144" height="144"/>
         <image name="cakeflowers.png" width="144" height="144"/>
@@ -350,6 +353,7 @@
         <image name="homeservices.png" width="144" height="144"/>
         <image name="iphonesixplusblank.png" width="2662" height="2662"/>
         <image name="laundry.png" width="144" height="144"/>
+>>>>>>> 61601051946790c15265201f3ca9ad423be60d76
         <image name="logo4" width="240" height="240"/>
         <image name="movie.png" width="144" height="144"/>
         <image name="recharge.png" width="144" height="144"/>
