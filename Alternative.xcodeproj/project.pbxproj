@@ -31,6 +31,7 @@
 		FA4981881D09D4F5008CF01C /* ALTMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4981871D09D4F4008CF01C /* ALTMainViewController.swift */; };
 		FA49818A1D09DA85008CF01C /* ALTNavigationDrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4981891D09DA85008CF01C /* ALTNavigationDrawerViewController.swift */; };
 		FA49818C1D09DC56008CF01C /* ALTNavTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49818B1D09DC56008CF01C /* ALTNavTableViewCell.swift */; };
+		FA898E8A1D0C68DE008510A2 /* ALTMainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA898E891D0C68DE008510A2 /* ALTMainCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		FA4981871D09D4F4008CF01C /* ALTMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALTMainViewController.swift; sourceTree = "<group>"; };
 		FA4981891D09DA85008CF01C /* ALTNavigationDrawerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALTNavigationDrawerViewController.swift; sourceTree = "<group>"; };
 		FA49818B1D09DC56008CF01C /* ALTNavTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALTNavTableViewCell.swift; sourceTree = "<group>"; };
+		FA898E891D0C68DE008510A2 /* ALTMainCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALTMainCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 				FA4981871D09D4F4008CF01C /* ALTMainViewController.swift */,
 				FA4981891D09DA85008CF01C /* ALTNavigationDrawerViewController.swift */,
 				FA49818B1D09DC56008CF01C /* ALTNavTableViewCell.swift */,
+				FA898E891D0C68DE008510A2 /* ALTMainCollectionViewCell.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				FA49818C1D09DC56008CF01C /* ALTNavTableViewCell.swift in Sources */,
 				FA49818A1D09DA85008CF01C /* ALTNavigationDrawerViewController.swift in Sources */,
 				FA4981881D09D4F5008CF01C /* ALTMainViewController.swift in Sources */,
+				FA898E8A1D0C68DE008510A2 /* ALTMainCollectionViewCell.swift in Sources */,
 				FA31487A1D046587005D13D1 /* ALTWalkthroughPageViewController.swift in Sources */,
 				FA3148851D04B6B4005D13D1 /* ALTRegisterViewController.swift in Sources */,
 				FA3148631D045510005D13D1 /* AppDelegate.swift in Sources */,

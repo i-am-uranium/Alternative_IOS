@@ -8,14 +8,19 @@
 
 import UIKit
 
-class ALTMainViewController: UIViewController {
+class ALTMainViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate {
 
+    @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var menuItemButton: UIBarButtonItem!
+    
+    let cellContents = [("food","Food Ordering"),("homeservices","Home Services"),("laundry","Dry Cleaning"),("cabs","Cab Booking"),("runner","Grocery Delivery"),("recharge","Richarge & Bills"),("gift","Gifts"),("cakeflowers","Cake & Flowers"),("movie","Movie TIckets")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+        self.title = "Alternative"
+        setStatusBarBackgroundColor(UIColor(red: 235/255, green: 161/255, blue: 14/255, alpha: 1.0))
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "homebackground")!)
+        collectionView.backgroundColor = UIColor.clearColor()
         
         if revealViewController() != nil {
             revealViewController().rearViewRevealWidth = 300
@@ -29,10 +34,37 @@ class ALTMainViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func setStatusBarBackgroundColor(color: UIColor) {
+        
+        guard  let statusBar = UIApplication.sharedApplication().valueForKey("statusBarWindow")?.valueForKey("statusBar") as? UIView else {
+            return
+        }
+        
+        statusBar.backgroundColor = color
     }
+    
+    
+    
+     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 1
+    }
+    
+    
+     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of items
+        return cellContents.count
+    }
+    
+     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! ALTMainCollectionViewCell
+        
+        cell.cellImageView.image = UIImage(named: cellContents[indexPath.row].0)
+        cell.cellLabel.text = cellContents[indexPath.row].1
+        
+           return cell
+    }
+
     
 
     /*
