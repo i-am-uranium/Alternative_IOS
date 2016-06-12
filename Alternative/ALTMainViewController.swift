@@ -19,7 +19,7 @@ class ALTMainViewController: UIViewController,UICollectionViewDataSource,UIColle
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Alternative"
-        anythingElse.layer.cornerRadius = 10.0
+        anythingElse.layer.cornerRadius = 10.0 x
         anythingElse.layer.borderWidth = 2.0
         anythingElse.layer.borderColor = UIColor(red: 144/255, green: 38/255, blue: 25/255, alpha: 1.0).CGColor
         setStatusBarBackgroundColor(UIColor(red: 235/255, green: 161/255, blue: 14/255, alpha: 1.0))
