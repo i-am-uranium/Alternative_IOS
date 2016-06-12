@@ -19,7 +19,8 @@ class ALTMainViewController: UIViewController,UICollectionViewDataSource,UIColle
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Alternative"
-        anythingElse.layer.cornerRadius = 10.0 x
+        
+        anythingElse.layer.cornerRadius = 10.0
         anythingElse.layer.borderWidth = 2.0
         anythingElse.layer.borderColor = UIColor(red: 144/255, green: 38/255, blue: 25/255, alpha: 1.0).CGColor
         setStatusBarBackgroundColor(UIColor(red: 235/255, green: 161/255, blue: 14/255, alpha: 1.0))
@@ -61,4 +62,11 @@ class ALTMainViewController: UIViewController,UICollectionViewDataSource,UIColle
         return cell
     }
     
+    
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        let vc = storyboard?.instantiateViewControllerWithIdentifier("CHAT_UI") as! ALTChatViewController
+        vc.titleText = cellContents[indexPath.row].1
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
