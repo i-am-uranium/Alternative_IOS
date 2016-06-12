@@ -17,6 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
+        appearence()
+//        setStatusBarBackgroundColor(UIColor(red: 235/255, green: 161/255, blue: 14/255, alpha: 1.0))
                 self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
                 let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
         
@@ -35,6 +37,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         return true
     }
+    
+    
+    func appearence(){
+        let navigationBarAppearence = UINavigationBar.appearance()
+        navigationBarAppearence.barTintColor = UIColor(red: 199/255, green: 191/255, blue: 175/255, alpha: 1.0)
+        navigationBarAppearence.tintColor = UIColor.whiteColor()
+        navigationBarAppearence.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.whiteColor()]
+//        UITabBar.appearance().tintColor = THEME_COLOR
+        //        UITabBar.appearance().barTintColor = THEME_COLOR
+    }
+    
+    
+    
+    
+    func setStatusBarBackgroundColor(color: UIColor) {
+        
+        guard  let statusBar = UIApplication.sharedApplication().valueForKey("statusBarWindow")?.valueForKey("statusBar") as? UIView else {
+            return
+        }
+        
+        statusBar.backgroundColor = color
+    }
+    
+    
+    
+    
+    
     
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
