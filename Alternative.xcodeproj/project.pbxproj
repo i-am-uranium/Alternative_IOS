@@ -63,6 +63,7 @@
 				FA3148601D04550F005D13D1 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		FA3148601D04550F005D13D1 /* Products */ = {
 			isa = PBXGroup;
@@ -188,7 +189,7 @@
 				CLASSPREFIX = ALT;
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
-				ORGANIZATIONNAME = "Mackorov Technogies Pvt Ltd";
+				ORGANIZATIONNAME = "Mackerov Technogies Pvt Ltd";
 				TargetAttributes = {
 					FA31485E1D04550F005D13D1 = {
 						CreatedOnToolsVersion = 7.3.1;
