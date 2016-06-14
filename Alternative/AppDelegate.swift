@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     var internetCheck:Reachability?
     let launchedBefore = NSUserDefaults.standardUserDefaults().boolForKey("launchedBefore")
+    let isLogedInBefore = NSUserDefaults.standardUserDefaults().boolForKey("logedInBefore")
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
@@ -33,9 +34,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if launchedBefore  {
             print("Not first launch.")
-            let initialViewController = storyboard.instantiateViewControllerWithIdentifier("LOGINVIEW")
-            self.window?.rootViewController = initialViewController
-            self.window?.makeKeyAndVisible()
+            if !isLogedInBefore {
+                let initialViewController = storyboard.instantiateViewControllerWithIdentifier("LOGINVIEW")
+                self.window?.rootViewController = initialViewController
+                self.window?.makeKeyAndVisible()
+            }else{
+                let initialViewController = storyboard.instantiateViewControllerWithIdentifier("MAINVIEW")
+                self.window?.rootViewController = initialViewController
+                self.window?.makeKeyAndVisible()
+            }
+            
         }
         else {
             print("First launch, setting NSUserDefault.")

@@ -34,6 +34,8 @@
 		FA91EFB21D104CDF0015CFAF /* ALTOTPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA91EFB01D104CDF0015CFAF /* ALTOTPViewController.xib */; };
 		FA91EFB51D104F920015CFAF /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = FA91EFB41D104F920015CFAF /* Reachability.m */; };
 		FA91EFB71D1050550015CFAF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91EFB61D1050550015CFAF /* Constants.swift */; };
+		FA91EFB91D107BEB0015CFAF /* ALTBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91EFB81D107BEB0015CFAF /* ALTBaseViewController.swift */; };
+		FA91EFBB1D1081E60015CFAF /* RegistrationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91EFBA1D1081E60015CFAF /* RegistrationResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +73,8 @@
 		FA91EFB31D104F920015CFAF /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		FA91EFB41D104F920015CFAF /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		FA91EFB61D1050550015CFAF /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FA91EFB81D107BEB0015CFAF /* ALTBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALTBaseViewController.swift; sourceTree = "<group>"; };
+		FA91EFBA1D1081E60015CFAF /* RegistrationResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +190,7 @@
 				FA31487C1D04B5D6005D13D1 /* Login-Register */,
 				FA31487B1D04B5C4005D13D1 /* WalkThrough */,
 				FA898E8E1D0D971A008510A2 /* Main */,
+				FA91EFB81D107BEB0015CFAF /* ALTBaseViewController.swift */,
 			);
 			name = ViewController;
 			path = Alternative;
@@ -227,6 +232,7 @@
 			children = (
 				FA91EF971D0E952B0015CFAF /* EndPoints.swift */,
 				FA91EF991D0E96420015CFAF /* ApiManager.swift */,
+				FA91EFBA1D1081E60015CFAF /* RegistrationResponse.swift */,
 			);
 			name = "API Manager";
 			sourceTree = "<group>";
@@ -385,11 +391,13 @@
 				FA91EFA71D0F462E0015CFAF /* UIColor.swift in Sources */,
 				FA4981881D09D4F5008CF01C /* ALTMainViewController.swift in Sources */,
 				FA91EFB11D104CDF0015CFAF /* ALTOTPViewController.swift in Sources */,
+				FA91EFB91D107BEB0015CFAF /* ALTBaseViewController.swift in Sources */,
 				FA898E8A1D0C68DE008510A2 /* ALTMainCollectionViewCell.swift in Sources */,
 				FA31487A1D046587005D13D1 /* ALTWalkthroughPageViewController.swift in Sources */,
 				FA91EFB71D1050550015CFAF /* Constants.swift in Sources */,
 				FA91EFA51D0F45D90015CFAF /* Colors.swift in Sources */,
 				FA3148851D04B6B4005D13D1 /* ALTRegisterViewController.swift in Sources */,
+				FA91EFBB1D1081E60015CFAF /* RegistrationResponse.swift in Sources */,
 				FA91EFA91D0F463A0015CFAF /* String.swift in Sources */,
 				FA91EFB51D104F920015CFAF /* Reachability.m in Sources */,
 				FA91EF9D1D0F24CB0015CFAF /* UIDevice.swift in Sources */,

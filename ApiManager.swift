@@ -13,7 +13,7 @@ class APIManager{
     
     //MARK:-Register
     
-    func sendRegistrationDetails(HTTPMethod httpMethod:String,url:String,completion:(response:Int)->Void){
+    func sendRegistrationDetails(HTTPMethod httpMethod:String,url:String,completion:(response:Int,data:NSData)->Void){
         
         let request = NSMutableURLRequest(URL: NSURL(string: url)!)
         let session = NSURLSession.sharedSession()
@@ -27,7 +27,7 @@ class APIManager{
                 dispatch_async(dispatch_get_main_queue()){
                     if let httpResponse = response as? NSHTTPURLResponse{
                         let status = httpResponse.statusCode
-                        completion(response: status)
+                        completion(response: status,data: data!)
                         print("Failed")
                         print(data!)
                     }
@@ -38,28 +38,31 @@ class APIManager{
                     dispatch_async(dispatch_get_main_queue()){
                         if let httpResponse = response as? NSHTTPURLResponse{
                             let status = httpResponse.statusCode
-                            completion(response:status)
+                            completion(response:status,data: data!)
                             print("success registration")
                         }
                         
-                        do{
-                            if let jsonData = try NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments) as? NSDictionary{
-                                let priority = DISPATCH_QUEUE_PRIORITY_HIGH
-                                dispatch_async(dispatch_get_global_queue(priority, 0)){
-                                    dispatch_async(dispatch_get_main_queue()){
-                                        print(jsonData)
-                                    }
-                                }
-                            }
-                        }catch{
-                            dispatch_async(dispatch_get_main_queue() ){
-                                if let httpResponse = response as? NSHTTPURLResponse{
-                                    let status = httpResponse.statusCode
-                                    print(data)
-                                    completion(response:status)
-                                }
-                            }
-                        }
+//                        do{
+//                            if let jsonData = try NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments) as? NSDictionary{
+//                                let priority = DISPATCH_QUEUE_PRIORITY_HIGH
+//                                dispatch_async(dispatch_get_global_queue(priority, 0)){
+//                                    dispatch_async(dispatch_get_main_queue()){
+//                                        print(jsonData)
+//                                        if let httpResponse = response as? NSHTTPURLResponse{
+//                                            let status = httpResponse.statusCode
+//                                            completion(response: status)
+//                                        }
+//                                    }
+//                                }
+//                            }
+//                        }catch{
+//                            dispatch_async(dispatch_get_main_queue() ){
+//                                if let httpResponse = response as? NSHTTPURLResponse{
+//                                    let status = httpResponse.statusCode
+//                                    completion(response:status)
+//                                }
+//                            }
+//                        }
                     }
                 }
             }

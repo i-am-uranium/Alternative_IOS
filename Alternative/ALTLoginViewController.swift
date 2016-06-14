@@ -17,8 +17,8 @@ class ALTLoginViewController: UIViewController,UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(reachabilityStatus)
-        print(EndPoints().getRegistrationEndPoint("codewithrabbit@gmail.com", contact_number: "99999999999", password: "codewithrabbit", alternate_number: "alternat", device_id: "device id"))
+//        print(reachabilityStatus)
+//        print(EndPoints().getRegistrationEndPoint("codewithrabbit@gmail.com", contact_number: "99999999999", password: "codewithrabbit", alternate_number: "alternat", device_id: "device_id"))
         appearance()
     }
     
