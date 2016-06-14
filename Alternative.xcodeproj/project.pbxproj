@@ -23,6 +23,20 @@
 		FA49818C1D09DC56008CF01C /* ALTNavTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49818B1D09DC56008CF01C /* ALTNavTableViewCell.swift */; };
 		FA898E8A1D0C68DE008510A2 /* ALTMainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA898E891D0C68DE008510A2 /* ALTMainCollectionViewCell.swift */; };
 		FA898E8D1D0D970E008510A2 /* ALTChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA898E8C1D0D970E008510A2 /* ALTChatViewController.swift */; };
+		FA91EF981D0E952B0015CFAF /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91EF971D0E952B0015CFAF /* EndPoints.swift */; };
+		FA91EF9A1D0E96420015CFAF /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91EF991D0E96420015CFAF /* ApiManager.swift */; };
+		FA91EF9D1D0F24CB0015CFAF /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91EF9C1D0F24CA0015CFAF /* UIDevice.swift */; };
+		FA91EF9F1D0F33A50015CFAF /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = FA91EF9E1D0F33A50015CFAF /* .gitignore */; };
+		FA91EFA51D0F45D90015CFAF /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91EFA41D0F45D90015CFAF /* Colors.swift */; };
+		FA91EFA71D0F462E0015CFAF /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91EFA61D0F462E0015CFAF /* UIColor.swift */; };
+		FA91EFA91D0F463A0015CFAF /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91EFA81D0F463A0015CFAF /* String.swift */; };
+		FA91EFB11D104CDF0015CFAF /* ALTOTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91EFAF1D104CDF0015CFAF /* ALTOTPViewController.swift */; };
+		FA91EFB21D104CDF0015CFAF /* ALTOTPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA91EFB01D104CDF0015CFAF /* ALTOTPViewController.xib */; };
+		FA91EFB51D104F920015CFAF /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = FA91EFB41D104F920015CFAF /* Reachability.m */; };
+		FA91EFB71D1050550015CFAF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91EFB61D1050550015CFAF /* Constants.swift */; };
+		FA91EFB91D107BEB0015CFAF /* ALTBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91EFB81D107BEB0015CFAF /* ALTBaseViewController.swift */; };
+		FA91EFBB1D1081E60015CFAF /* RegistrationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91EFBA1D1081E60015CFAF /* RegistrationResponse.swift */; };
+		FA91EFBD1D10A6570015CFAF /* ALTBaseNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91EFBC1D10A6560015CFAF /* ALTBaseNavViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +44,7 @@
 		348C0716E11A8EE25301BCC2 /* Pods-Alternative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alternative.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alternative/Pods-Alternative.release.xcconfig"; sourceTree = "<group>"; };
 		C9F95BCE3A2D2449A6061CEE /* Pods-Alternative.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alternative.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alternative/Pods-Alternative.debug.xcconfig"; sourceTree = "<group>"; };
 		FA31485F1D04550F005D13D1 /* Alternative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alternative.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA3148621D045510005D13D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA3148621D045510005D13D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Alternative/AppDelegate.swift; sourceTree = "<group>"; };
 		FA3148671D045510005D13D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA31486A1D045511005D13D1 /* Alternative.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Alternative.xcdatamodel; sourceTree = "<group>"; };
 		FA31486C1D045511005D13D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,6 +62,21 @@
 		FA49818B1D09DC56008CF01C /* ALTNavTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALTNavTableViewCell.swift; sourceTree = "<group>"; };
 		FA898E891D0C68DE008510A2 /* ALTMainCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALTMainCollectionViewCell.swift; sourceTree = "<group>"; };
 		FA898E8C1D0D970E008510A2 /* ALTChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALTChatViewController.swift; sourceTree = "<group>"; };
+		FA91EF971D0E952B0015CFAF /* EndPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		FA91EF991D0E96420015CFAF /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		FA91EF9C1D0F24CA0015CFAF /* UIDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDevice.swift; sourceTree = "<group>"; };
+		FA91EF9E1D0F33A50015CFAF /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		FA91EFA41D0F45D90015CFAF /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Colors.swift; path = ../Colors.swift; sourceTree = "<group>"; };
+		FA91EFA61D0F462E0015CFAF /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		FA91EFA81D0F463A0015CFAF /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		FA91EFAF1D104CDF0015CFAF /* ALTOTPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALTOTPViewController.swift; sourceTree = "<group>"; };
+		FA91EFB01D104CDF0015CFAF /* ALTOTPViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALTOTPViewController.xib; sourceTree = "<group>"; };
+		FA91EFB31D104F920015CFAF /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		FA91EFB41D104F920015CFAF /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		FA91EFB61D1050550015CFAF /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FA91EFB81D107BEB0015CFAF /* ALTBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALTBaseViewController.swift; sourceTree = "<group>"; };
+		FA91EFBA1D1081E60015CFAF /* RegistrationResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationResponse.swift; sourceTree = "<group>"; };
+		FA91EFBC1D10A6560015CFAF /* ALTBaseNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALTBaseNavViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,11 +111,18 @@
 		FA3148561D04550E005D13D1 = {
 			isa = PBXGroup;
 			children = (
+				FA3148621D045510005D13D1 /* AppDelegate.swift */,
+				FA91EFAA1D0FD3770015CFAF /* Utils */,
+				FA91EF961D0E94730015CFAF /* API Manager */,
+				FA31487E1D04B5FE005D13D1 /* Model */,
+				FA31487D1D04B5E6005D13D1 /* Storyboard */,
+				FA3148811D04B659005D13D1 /* ViewController */,
+				FA91EF9B1D0F245D0015CFAF /* Extension */,
 				FA4981821D09C7E2008CF01C /* Libs */,
-				FA3148611D045510005D13D1 /* Alternative */,
 				FA3148601D04550F005D13D1 /* Products */,
 				CE11F39AB4A4C40C7C633B91 /* Pods */,
 				216BA72D692CA93D521559D2 /* Frameworks */,
+				FA3148801D04B64B005D13D1 /* supporting files */,
 			);
 			sourceTree = "<group>";
 			usesTabs = 0;
@@ -97,17 +133,6 @@
 				FA31485F1D04550F005D13D1 /* Alternative.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		FA3148611D045510005D13D1 /* Alternative */ = {
-			isa = PBXGroup;
-			children = (
-				FA31487E1D04B5FE005D13D1 /* Model */,
-				FA31487D1D04B5E6005D13D1 /* Storyboard */,
-				FA3148811D04B659005D13D1 /* ViewController */,
-				FA3148801D04B64B005D13D1 /* supporting files */,
-			);
-			path = Alternative;
 			sourceTree = "<group>";
 		};
 		FA31487B1D04B5C4005D13D1 /* WalkThrough */ = {
@@ -124,6 +149,8 @@
 			children = (
 				FA3148821D04B69D005D13D1 /* ALTLoginViewController.swift */,
 				FA3148841D04B6B4005D13D1 /* ALTRegisterViewController.swift */,
+				FA91EFAF1D104CDF0015CFAF /* ALTOTPViewController.swift */,
+				FA91EFB01D104CDF0015CFAF /* ALTOTPViewController.xib */,
 			);
 			name = "Login-Register";
 			sourceTree = "<group>";
@@ -135,6 +162,7 @@
 				FA31486E1D045511005D13D1 /* LaunchScreen.storyboard */,
 			);
 			name = Storyboard;
+			path = Alternative;
 			sourceTree = "<group>";
 		};
 		FA31487E1D04B5FE005D13D1 /* Model */ = {
@@ -142,14 +170,7 @@
 			children = (
 			);
 			name = Model;
-			sourceTree = "<group>";
-		};
-		FA31487F1D04B615005D13D1 /* Appdelegate */ = {
-			isa = PBXGroup;
-			children = (
-				FA3148621D045510005D13D1 /* AppDelegate.swift */,
-			);
-			name = Appdelegate;
+			path = Alternative;
 			sourceTree = "<group>";
 		};
 		FA3148801D04B64B005D13D1 /* supporting files */ = {
@@ -158,8 +179,10 @@
 				FA3148711D045511005D13D1 /* Info.plist */,
 				FA31486C1D045511005D13D1 /* Assets.xcassets */,
 				FA3148691D045511005D13D1 /* Alternative.xcdatamodeld */,
+				FA91EF9E1D0F33A50015CFAF /* .gitignore */,
 			);
 			name = "supporting files";
+			path = Alternative;
 			sourceTree = "<group>";
 		};
 		FA3148811D04B659005D13D1 /* ViewController */ = {
@@ -168,15 +191,19 @@
 				FA898E8B1D0D96E6008510A2 /* Chat UI */,
 				FA31487C1D04B5D6005D13D1 /* Login-Register */,
 				FA31487B1D04B5C4005D13D1 /* WalkThrough */,
-				FA31487F1D04B615005D13D1 /* Appdelegate */,
 				FA898E8E1D0D971A008510A2 /* Main */,
+				FA91EFB81D107BEB0015CFAF /* ALTBaseViewController.swift */,
+				FA91EFBC1D10A6560015CFAF /* ALTBaseNavViewController.swift */,
 			);
 			name = ViewController;
+			path = Alternative;
 			sourceTree = "<group>";
 		};
 		FA4981821D09C7E2008CF01C /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				FA91EFB31D104F920015CFAF /* Reachability.h */,
+				FA91EFB41D104F920015CFAF /* Reachability.m */,
 				FA4981841D09C7EF008CF01C /* SWRevealViewController.h */,
 				FA4981851D09C7EF008CF01C /* SWRevealViewController.m */,
 				FA4981831D09C7EE008CF01C /* Alternative-Bridging-Header.h */,
@@ -201,6 +228,36 @@
 				FA898E891D0C68DE008510A2 /* ALTMainCollectionViewCell.swift */,
 			);
 			name = Main;
+			sourceTree = "<group>";
+		};
+		FA91EF961D0E94730015CFAF /* API Manager */ = {
+			isa = PBXGroup;
+			children = (
+				FA91EF971D0E952B0015CFAF /* EndPoints.swift */,
+				FA91EF991D0E96420015CFAF /* ApiManager.swift */,
+				FA91EFBA1D1081E60015CFAF /* RegistrationResponse.swift */,
+			);
+			name = "API Manager";
+			sourceTree = "<group>";
+		};
+		FA91EF9B1D0F245D0015CFAF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FA91EF9C1D0F24CA0015CFAF /* UIDevice.swift */,
+				FA91EFA81D0F463A0015CFAF /* String.swift */,
+				FA91EFA61D0F462E0015CFAF /* UIColor.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		FA91EFAA1D0FD3770015CFAF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FA91EFA41D0F45D90015CFAF /* Colors.swift */,
+				FA91EFB61D1050550015CFAF /* Constants.swift */,
+			);
+			name = Utils;
+			path = Alternative;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,9 +322,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA91EF9F1D0F33A50015CFAF /* .gitignore in Resources */,
 				FA3148701D045511005D13D1 /* LaunchScreen.storyboard in Resources */,
 				FA31486D1D045511005D13D1 /* Assets.xcassets in Resources */,
 				FA3148681D045510005D13D1 /* Main.storyboard in Resources */,
+				FA91EFB21D104CDF0015CFAF /* ALTOTPViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,11 +389,23 @@
 				FA31486B1D045511005D13D1 /* Alternative.xcdatamodeld in Sources */,
 				FA3148831D04B69D005D13D1 /* ALTLoginViewController.swift in Sources */,
 				FA49818C1D09DC56008CF01C /* ALTNavTableViewCell.swift in Sources */,
+				FA91EF981D0E952B0015CFAF /* EndPoints.swift in Sources */,
 				FA49818A1D09DA85008CF01C /* ALTNavigationDrawerViewController.swift in Sources */,
+				FA91EFA71D0F462E0015CFAF /* UIColor.swift in Sources */,
 				FA4981881D09D4F5008CF01C /* ALTMainViewController.swift in Sources */,
+				FA91EFB11D104CDF0015CFAF /* ALTOTPViewController.swift in Sources */,
+				FA91EFBD1D10A6570015CFAF /* ALTBaseNavViewController.swift in Sources */,
+				FA91EFB91D107BEB0015CFAF /* ALTBaseViewController.swift in Sources */,
 				FA898E8A1D0C68DE008510A2 /* ALTMainCollectionViewCell.swift in Sources */,
 				FA31487A1D046587005D13D1 /* ALTWalkthroughPageViewController.swift in Sources */,
+				FA91EFB71D1050550015CFAF /* Constants.swift in Sources */,
+				FA91EFA51D0F45D90015CFAF /* Colors.swift in Sources */,
 				FA3148851D04B6B4005D13D1 /* ALTRegisterViewController.swift in Sources */,
+				FA91EFBB1D1081E60015CFAF /* RegistrationResponse.swift in Sources */,
+				FA91EFA91D0F463A0015CFAF /* String.swift in Sources */,
+				FA91EFB51D104F920015CFAF /* Reachability.m in Sources */,
+				FA91EF9D1D0F24CB0015CFAF /* UIDevice.swift in Sources */,
+				FA91EF9A1D0E96420015CFAF /* ApiManager.swift in Sources */,
 				FA3148631D045510005D13D1 /* AppDelegate.swift in Sources */,
 				FA898E8D1D0D970E008510A2 /* ALTChatViewController.swift in Sources */,
 				FA3148781D046410005D13D1 /* ALTWalkthroughContentViewController.swift in Sources */,
@@ -456,6 +527,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Alternative/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = in.alternativeforyou.Alternative;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -472,6 +544,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Alternative/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = in.alternativeforyou.Alternative;
 				PRODUCT_NAME = "$(TARGET_NAME)";

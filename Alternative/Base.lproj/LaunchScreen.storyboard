@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,17 +16,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo4" translatesAutoresizingMaskIntoConstraints="NO" id="WB6-KV-4hr">
-                                <rect key="frame" x="180" y="180" width="240" height="240"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo4" translatesAutoresizingMaskIntoConstraints="NO" id="WB6-KV-4hr">
+                                <rect key="frame" x="250" y="81" width="100" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="WB6-KV-4hr" secondAttribute="height" multiplier="1:1" id="FNN-sI-nVb"/>
+                                    <constraint firstAttribute="height" constant="100" id="7pM-Yi-oGZ"/>
+                                    <constraint firstAttribute="width" constant="100" id="fFK-iX-aHc"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your world of convenience" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2sZ-hp-diy">
+                                <rect key="frame" x="193" y="289" width="215" height="22"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="18"/>
+                                <color key="textColor" red="0.56470588239999997" green="0.14901960780000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alternative" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIE-2R-hRK">
+                                <rect key="frame" x="237" y="214" width="126" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="0.87843137250000003" green="0.46666666670000001" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="WB6-KV-4hr" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ONi-j2-nCd"/>
-                            <constraint firstItem="WB6-KV-4hr" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="QvO-S5-iMN"/>
+                            <constraint firstItem="LIE-2R-hRK" firstAttribute="top" secondItem="WB6-KV-4hr" secondAttribute="bottom" constant="33" id="8BO-eF-wrn"/>
+                            <constraint firstItem="WB6-KV-4hr" firstAttribute="centerX" secondItem="2sZ-hp-diy" secondAttribute="centerX" id="Fb1-4d-jye"/>
+                            <constraint firstItem="WB6-KV-4hr" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="61" id="KFY-SW-FI4"/>
+                            <constraint firstItem="2sZ-hp-diy" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="O68-vb-0bT"/>
+                            <constraint firstItem="WB6-KV-4hr" firstAttribute="centerX" secondItem="LIE-2R-hRK" secondAttribute="centerX" id="e6M-SJ-UvE"/>
+                            <constraint firstItem="2sZ-hp-diy" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ptT-ZC-vqE"/>
                         </constraints>
                     </view>
                 </viewController>
