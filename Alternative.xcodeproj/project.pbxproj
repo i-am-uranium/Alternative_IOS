@@ -36,6 +36,7 @@
 		FA91EFB71D1050550015CFAF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91EFB61D1050550015CFAF /* Constants.swift */; };
 		FA91EFB91D107BEB0015CFAF /* ALTBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91EFB81D107BEB0015CFAF /* ALTBaseViewController.swift */; };
 		FA91EFBB1D1081E60015CFAF /* RegistrationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91EFBA1D1081E60015CFAF /* RegistrationResponse.swift */; };
+		FA91EFBD1D10A6570015CFAF /* ALTBaseNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91EFBC1D10A6560015CFAF /* ALTBaseNavViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 		FA91EFB61D1050550015CFAF /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FA91EFB81D107BEB0015CFAF /* ALTBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALTBaseViewController.swift; sourceTree = "<group>"; };
 		FA91EFBA1D1081E60015CFAF /* RegistrationResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationResponse.swift; sourceTree = "<group>"; };
+		FA91EFBC1D10A6560015CFAF /* ALTBaseNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALTBaseNavViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +193,7 @@
 				FA31487B1D04B5C4005D13D1 /* WalkThrough */,
 				FA898E8E1D0D971A008510A2 /* Main */,
 				FA91EFB81D107BEB0015CFAF /* ALTBaseViewController.swift */,
+				FA91EFBC1D10A6560015CFAF /* ALTBaseNavViewController.swift */,
 			);
 			name = ViewController;
 			path = Alternative;
@@ -391,6 +394,7 @@
 				FA91EFA71D0F462E0015CFAF /* UIColor.swift in Sources */,
 				FA4981881D09D4F5008CF01C /* ALTMainViewController.swift in Sources */,
 				FA91EFB11D104CDF0015CFAF /* ALTOTPViewController.swift in Sources */,
+				FA91EFBD1D10A6570015CFAF /* ALTBaseNavViewController.swift in Sources */,
 				FA91EFB91D107BEB0015CFAF /* ALTBaseViewController.swift in Sources */,
 				FA898E8A1D0C68DE008510A2 /* ALTMainCollectionViewCell.swift in Sources */,
 				FA31487A1D046587005D13D1 /* ALTWalkthroughPageViewController.swift in Sources */,

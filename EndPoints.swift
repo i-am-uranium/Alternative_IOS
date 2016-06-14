@@ -21,6 +21,16 @@ class EndPoints{
 //    
 //    let OTPEndPOINT = "http://52.41.68.149/api/v0/otp_verification_at_registration?otp=234567&email_id=jaintulsi43@gmail.com"
     
+//    
+//    http://52.41.68.149/api/v0/login?email_id=jaintulsi@gmail.com&password=tulsi123&registration_id=re&device_id=cdce
+
+//    http://52.41.68.149/api/v0/login?email_id=jaintulsi@gmail.com&password=tulsi123&registration_id=re&device_id=cdce
+    
+    func getLoginApi(email:String,password:String) -> String {
+        return "http://52.41.68.149/api/v0/login?email_id="+email+"&password="+password+"&registration_id=re&device_id=cdce"
+    }
+    
+    
     func getRegistrationEndPoint(email_id:String,contact_number:String,password:String,alternate_number:String,device_id:String)->String{
         return "http://52.41.68.149/api/v0/registration?full_name=UserName&email_id="+email_id+"&"+"contact_number="+contact_number+"&"+"password="+password+"&"+"password_confirmation="+password+"&"+"alternate_number="+alternate_number+"&"+"registration_id=veve&"+"device_id="+device_id
     }
@@ -28,6 +38,7 @@ class EndPoints{
     func getOtpUrl(otp:String,email:String)->String{
         return "http://52.41.68.149/api/v0/otp_verification_at_registration?otp="+otp+"&email_id="+email
     }
+    
     
     
 }

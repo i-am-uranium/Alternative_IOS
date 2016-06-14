@@ -214,12 +214,14 @@ class ALTRegisterViewController: ALTBaseViewController,UITextFieldDelegate {
                     }
                 }
             }catch{
+                activityIndicator.stopAnimating()
             }
             
             activityIndicator.stopAnimating()
             let vc = ALTOTPViewController()
             self.presentViewController(vc, animated: true, completion: nil)
         }else{
+            activityIndicator.stopAnimating()
             alertView("Something went wrong try again")
         }
         

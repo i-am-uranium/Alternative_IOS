@@ -8,43 +8,65 @@
 
 import UIKit
 
-class ALTLoginViewController: UIViewController,UITextFieldDelegate {
+class ALTLoginViewController: ALTBaseViewController,UITextFieldDelegate {
     
     let apiManager = APIManager()
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        print(reachabilityStatus)
-//        print(EndPoints().getRegistrationEndPoint("codewithrabbit@gmail.com", contact_number: "99999999999", password: "codewithrabbit", alternate_number: "alternat", device_id: "device_id"))
         appearance()
     }
     
     func appearance(){
         loginButton.layer.cornerRadius = 5.0
-        
-    }
-    
-    func didSendData(status:Int){
-        print(status)
-        let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
-        let initialViewController = storyboard.instantiateViewControllerWithIdentifier("MAINVIEW")
-        self.presentViewController(initialViewController, animated: true, completion: nil)
     }
     
     @IBAction func loginPressed(sender: AnyObject) {
-        //        let userName = emailField.text
-        //        let password = passwordField.text
+        let userName = emailField.text
+        let password = passwordField.text
         //        let registration_id = ""
         //        let device_id = ""
-        //        apiManager.sendRegistrationDetails(HTTPMethod: "GET", url: "http://192.168.0.6:3000/api/v0/login?email_id=jaintulsi43@gmail.com&password=tulsi123&registration_id=evefve&device_id=efvefv", completion: didSendData)
-        let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
-        let initialViewController = storyboard.instantiateViewControllerWithIdentifier("MAINVIEW")
-        self.presentViewController(initialViewController, animated: true, completion: nil)
+        
+        if !(userName?.isBlank)! || !(password?.isBlank)!{
+            apiManager.sendRegistrationDetails(HTTPMethod: "GET", url: EndPoints().getLoginApi(userName!, password: password!), completion: didSendData)
+            activityIndicator.startAnimating()
+        }
     }
     
+    func didSendData(status:Int,data:NSData){
+        print(status)
+        if status == OK{
+            do{
+                let jsonData = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers) as! NSDictionary
+                
+                let contact_number = jsonData.objectForKey("contact_number") as! String
+                let email_id = jsonData.objectForKey("email_id") as! String
+                let full_name = jsonData.objectForKey("full_name") as! String
+                let message = jsonData.objectForKey("message") as! String
+                NSUserDefaults.standardUserDefaults().setObject(contact_number, forKey: "contact_number")
+                NSUserDefaults.standardUserDefaults().setObject(email_id, forKey: "email_id")
+                NSUserDefaults.standardUserDefaults().setObject(full_name, forKey: "full_name")
+                NSUserDefaults.standardUserDefaults().setObject(message, forKey: "message")
+                NSUserDefaults.standardUserDefaults().setBool(true, forKey: "logedInBefore")
+                let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+                let initialViewController = storyboard.instantiateViewControllerWithIdentifier("MAINVIEW")
+                activityIndicator.stopAnimating()
+                self.presentViewController(initialViewController, animated: true, completion: nil)
+                print(jsonData)
+            }catch{
+                activityIndicator.stopAnimating()
+                alertView("Something went Wrong")
+            }
+        }else{
+            activityIndicator.stopAnimating()
+            alertView("Something went Wrong")
+        }
+    }
     
     
     func textFieldShouldReturn(textField:UITextField)->Bool{

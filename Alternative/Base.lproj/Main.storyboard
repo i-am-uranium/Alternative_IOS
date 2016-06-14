@@ -166,10 +166,16 @@
                                 <color key="textColor" red="0.87843137250000003" green="0.46666666670000001" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="UV5-mt-zec">
+                                <rect key="frame" x="282" y="281" width="37" height="37"/>
+                                <color key="tintColor" red="0.56470588239999997" green="0.14901960780000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="color" red="0.56470588239999997" green="0.14901960780000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="jJd-n3-aOv" firstAttribute="top" secondItem="Gqy-L5-Da4" secondAttribute="bottom" constant="21" id="0sc-Eb-A9z"/>
+                            <constraint firstItem="UV5-mt-zec" firstAttribute="centerX" secondItem="6UW-tX-6z2" secondAttribute="centerX" id="5MW-wT-sLa"/>
                             <constraint firstItem="SuC-2z-bnP" firstAttribute="leading" secondItem="6UW-tX-6z2" secondAttribute="leadingMargin" constant="53" id="5c5-ag-yY4"/>
                             <constraint firstItem="Gqy-L5-Da4" firstAttribute="top" secondItem="ZN3-VT-CIe" secondAttribute="bottom" constant="25" id="5yh-tJ-txO"/>
                             <constraint firstAttribute="trailingMargin" secondItem="SuC-2z-bnP" secondAttribute="trailing" constant="30" id="CoQ-ee-sE1"/>
@@ -183,11 +189,13 @@
                             <constraint firstItem="ZN3-VT-CIe" firstAttribute="top" secondItem="SuC-2z-bnP" secondAttribute="bottom" constant="8" symbolic="YES" id="iGO-Ew-9Ix"/>
                             <constraint firstItem="SQR-Np-xKx" firstAttribute="centerX" secondItem="jJd-n3-aOv" secondAttribute="centerX" id="n1l-tF-8cZ"/>
                             <constraint firstItem="SQR-Np-xKx" firstAttribute="centerX" secondItem="Vg7-qA-aEb" secondAttribute="centerX" id="uVn-My-f1l"/>
+                            <constraint firstItem="UV5-mt-zec" firstAttribute="centerY" secondItem="6UW-tX-6z2" secondAttribute="centerY" id="vdI-yH-foV"/>
                             <constraint firstItem="SQR-Np-xKx" firstAttribute="top" secondItem="orw-ig-Nbz" secondAttribute="bottom" constant="69" id="veh-hE-NBX"/>
                             <constraint firstItem="SQR-Np-xKx" firstAttribute="centerX" secondItem="6UW-tX-6z2" secondAttribute="centerX" id="y3m-vW-kQp"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="UV5-mt-zec" id="2mb-ym-204"/>
                         <outlet property="emailField" destination="SuC-2z-bnP" id="nqd-A1-bYY"/>
                         <outlet property="loginButton" destination="jJd-n3-aOv" id="OWP-Mk-lIt"/>
                         <outlet property="passwordField" destination="ZN3-VT-CIe" id="h6M-aC-Brb"/>
@@ -642,10 +650,10 @@
             </objects>
             <point key="canvasLocation" x="3524" y="649"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Base Nav View Controller-->
         <scene sceneID="3Hn-sO-Ztz">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ef9-b5-MuC" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ef9-b5-MuC" customClass="ALTBaseNavViewController" customModule="Alternative" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="obb-hg-b3P">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
