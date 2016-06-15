@@ -8,6 +8,7 @@
 
 import UIKit
 import JSQMessagesViewController
+import PubNub
 
 class ALTChatViewController: JSQMessagesViewController {
     
