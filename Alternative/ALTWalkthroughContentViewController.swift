@@ -15,12 +15,13 @@ class ALTWalkthroughContentViewController: UIViewController {
     var imageFile = ""
     var content = ""
     
+    
     //Mark:-Properties
     @IBOutlet weak var walkThroughImages: UIImageView!
     @IBOutlet weak var walkThroughLines: UITextView!
     @IBOutlet weak var pageControl: UIPageControl!
-    @IBOutlet weak var forwardButton: UIButton!
     
+    @IBOutlet weak var forwardButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 //        switch index {
@@ -31,14 +32,11 @@ class ALTWalkthroughContentViewController: UIViewController {
         if case 0...1 = index {
             forwardButton.setTitle("NEXT", forState: UIControlState.Normal)
         } else if case 2 = index {
-            forwardButton.setTitle("Got it!", forState: UIControlState.Normal)
+            forwardButton.setTitle("Got it", forState: UIControlState.Normal)
         }
         pageControl.currentPage = index
         walkThroughImages.image = UIImage(imageLiteral: imageFile)
         walkThroughLines.text = content
-        walkThroughLines.textColor = UIColor(red: 224/255, green: 119/255, blue: 64/255, alpha: 1.0)
-        walkThroughLines.font = UIFont(name: "Helvetica Neue", size: 20.0)
-        walkThroughLines.textAlignment = .Center
 
     }
 
@@ -58,6 +56,16 @@ class ALTWalkthroughContentViewController: UIViewController {
         default: break
         }
     }
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
 }
 enum UIModalTransitionStyle : Int {
     case CoverVertical = 0
